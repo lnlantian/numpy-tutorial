@@ -1,7 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-
 def show_slice(Z, name):
     Z = np.atleast_2d(Z)
     rows,cols = Z.shape
@@ -19,8 +18,6 @@ def show_slice(Z, name):
     #ax.tick_params(axis='x', colors='w')
     #ax.tick_params(axis='y', colors='w')
     plt.savefig('../figures/%s' % name, dpi=16)
-    #plt.show()
-
 
 rows,cols = 5, 9
 
